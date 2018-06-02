@@ -1,3 +1,60 @@
-<p>
-  register works!
-</p>
+<div class="container card-box">
+  <div class="card col-sm-6">
+    <div class="card-body">
+      <h3 class="text-center" id="registerHeading">Register</h3>
+      <p class="text-center" id="newUser"><a routerLink="/login">If Already User Try Login</a></p>
+      <form class="form-inline" action="/action_page.php">
+        <h5 >First Name:</h5>
+        <div class="input-group col-sm-12">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+          </div>
+          <input type="text" class="form-control" id="first-name" required="required">
+        </div>
+
+        <h5 >Last Name:</h5>
+        <div class="input-group col-sm-12">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+          </div>
+          <input type="text" class="form-control" id="last-name">
+        </div>
+
+        <h5 >Email address:</h5>
+        <div class="input-group col-sm-12">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-envelope-open" aria-hidden="true"></i></span>
+          </div>
+          <input type="email" class="form-control" id="email" required="required">
+        </div>
+
+        <h5 >Address:</h5>
+        <div class="input-group col-sm-12">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-home" aria-hidden="true"></i></span>
+          </div>
+          <input type="text" class="form-control" id="address" required="required">
+        </div>
+
+
+        <h5 for="pwd">Password:</h5>
+        <div class="input-group col-sm-12">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
+          </div>
+          <input type="password" class="form-control" id="pwd" required="required">
+        </div>
+
+        <h5 for="confirmPwd">Confirm Password:</h5>
+        <div class="input-group col-sm-12">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
+          </div>
+          <input type="password" class="form-control" id="confirmPwd" required="required">
+        </div>
+
+        <button type="submit" class="btn btn-warning">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
