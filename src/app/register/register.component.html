@@ -3,7 +3,7 @@
     <div class="card-body">
       <h3 class="text-center" id="registerHeading">Register</h3>
       <p class="text-center" id="newUser"><a routerLink="/login">If Already User Try Login</a></p>
-      <form class="form-inline" action="/action_page.php">
+      <form class="form-inline" (submit)="onRegister($event)">
         <h5 >First Name:</h5>
         <div class="input-group col-sm-12">
           <div class="input-group-prepend">

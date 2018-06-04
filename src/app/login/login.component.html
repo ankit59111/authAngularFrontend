@@ -3,13 +3,13 @@
     <div class="card-body">
       <h3 class="text-center">LOGIN</h3>
       <p class="text-center" id="newUser"><a routerLink="/register">New User Register</a></p>
-      <form class="form-inline" action="/action_page.php">
+      <form class="form-inline" (submit)="loginUser($event)">
         <h5 >Email address:</h5>
         <div class="input-group col-sm-12">
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fa fa-envelope-open" aria-hidden="true"></i></span>
           </div>
-          <input type="email" class="form-control" id="email">
+          <input type="email" class="form-control" id="email" required="required">
         </div>
 
         <h5 for="pwd">Password:</h5>
@@ -17,10 +17,14 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
           </div>
-          <input type="password" class="form-control" id="pwd">
+          <input type="password" class="form-control" id="pwd" required="required">
+          <p><a routerLink="/resetPassword">FORGOT PASSWORD ?</a></p>
+          <br>
+        </div>
+        <div class="button">
+          <button class="btn btn-warning" align="middle">Submit</button>
         </div>
 
-        <button type="submit" class="btn btn-warning">Submit</button>
       </form>
     </div>
   </div>
